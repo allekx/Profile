@@ -7,10 +7,14 @@ body {
   background-color: #f3f4f6;
   color: #333;
   line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 50%;
   margin: 40px auto;
   padding: 20px;
   background: white;
@@ -29,7 +33,6 @@ body {
 .profile {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
 }
 
 .profile img {
@@ -101,4 +104,44 @@ footer a:hover {
 
 .back-button:hover {
   background-color: #004c2e;
+}
+
+@media (min-width: 380px) and (max-width: 1142px) {
+  .container {
+    max-width: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  div p {
+    font-size: 13px;
+  }
+
+  .section-title {
+    font-size: 18px;
+  }
+
+  .profile-info {
+    font-size: 12px;
+  }
+
+  .profile img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .hobby {
+    font-size: 10px;
+    padding: 6px 12px;
+  }
+
+  footer a img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .back-button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
 }

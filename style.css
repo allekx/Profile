@@ -8,16 +8,15 @@ body {
   color: #ffffff;
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   height: 100vh;
 }
 
 .profile-container {
   text-align: center;
   background: #2a2a2a;
-  margin-top: 5rem;
-  width: 90%;
-  max-width: 550px;
+  width: 50%;
+  height: 50%;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -81,4 +80,15 @@ body {
   padding: 2px 8px;
   border-radius: 5px;
   margin-top: 10px;
+}
+
+
+@media (min-width: 380px) and (max-width: 1142px) {
+
+  .profile-container {
+    width: 100%;
+  }
+
+
+
 }
