@@ -24,7 +24,7 @@ body {
 .profile-container {
   text-align: center;
   backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.0);
+  background: rgba(255, 255, 255, 0);
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.329);
   width: 50%;
   height: 50%;
@@ -96,6 +96,7 @@ body {
 @media (min-width: 380px) and (max-width: 1142px) {
 
   .profile-container {
+    backdrop-filter: blur(6px);
     width: 80%;
   }
   .teia-aranha {
