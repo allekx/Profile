@@ -46,6 +46,23 @@ body {
   height: 100%;
   object-fit: cover;
 }
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.profile-picture img {
+  animation: girar 6s linear infinite; /* Tempo de 3s, rotação suave e infinita */
+}
+
+
+
+
+
 
 .profile-name {
   font-size: 32px;
