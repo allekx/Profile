@@ -4,7 +4,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-image: url(../img/fundo.png);
+  background-image: url(./img/fundo.png);
   color: #ffffff;
   line-height: 1.6;
   display: flex;
