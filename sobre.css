@@ -32,16 +32,31 @@ body {
 }
 
 .profile {
+  
   display: flex;
   align-items: center;
 }
 
 .profile img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
   border-radius: 50%;
-  margin-right: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 5px;
+  border: 3px solid #444;
+}
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.profile img {
+  animation: girar 6s linear infinite; /* Tempo de 3s, rotação suave e infinita */
 }
 
 .profile-info {
@@ -88,22 +103,37 @@ footer a {
 footer a:hover {
   transform: translateY(-10px);
 }
-
-.back-button {
+.botao-trabalhos {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.botao-trabalhos span {
+ display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trabalhos {
   display: inline-block;
-  margin-top: 20px;
   background-color: #0e26ff;
-  color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
-  text-decoration: none;
-  text-align: center;
   transition: background-color 0.3s;
 }
 
-.back-button:hover {
+.trabalhos img {
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+}
+.trabalhos a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+.trabalhos:hover {
   background-color: #2256ff;
 }
 
@@ -139,8 +169,11 @@ footer a:hover {
     width: 25px;
     height: 25px;
   }
-
-  .back-button {
+  .botao-trabalhos {
+    margin-top: 1rem;
+  }
+  .trabalhos{
+    width: 100%;
     font-size: 12px;
     padding: 6px 12px;
   }
