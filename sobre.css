@@ -4,7 +4,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-image: url(./img/fundo.png);
+  background-image: url(./img/background\ moba3.png);
   color: #ffffff;
   line-height: 1.6;
   display: flex;
@@ -140,8 +140,9 @@ footer a:hover {
 @media (min-width: 380px) and (max-width: 1142px) {
   .container {
     max-width: 80%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.0);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.329);
   }
   div p {
     font-size: 13px;
