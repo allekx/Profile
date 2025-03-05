@@ -33,6 +33,27 @@ document.addEventListener('DOMContentLoaded', function () {
       clearError('email');
     }
 
+    //Validação do "Telefone"
+
+
+    document.getElementById('telefone').addEventListener('input', function (e) {
+      let value = e.target.value.replace(/\D/g, ''); // Remove tudo que não for número
+      if (value.length > 11) value = value.slice(0, 11); // Limita a 11 dígitos
+  
+      let formattedValue = "";
+      if (value.length > 10) { // Formato para números com 11 dígitos (celular)
+          formattedValue = `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7, 11)}`;
+      } else if (value.length > 6) { // Formato para números fixos (10 dígitos)
+          formattedValue = `(${value.slice(0, 2)}) ${value.slice(2, 6)}-${value.slice(6)}`;
+      } else if (value.length > 2) {
+          formattedValue = `(${value.slice(0, 2)}) ${value.slice(2)}`;
+      } else if (value.length > 0) {
+          formattedValue = `(${value}`;
+      }
+  
+      e.target.value = formattedValue;
+  });
+
     // Validação do campo "Descrição do Projeto"
     const descricao = document.getElementById('descricao').value.trim();
     if (descricao === '') {
