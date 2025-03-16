@@ -39,11 +39,29 @@
 <link rel="canonical" href="https://allekx.github.io/Profile/">
 
   <link rel="shortcut icon" type="image/jpg" href="./Assets/img/miles morales icon.jpeg" sizes="48x48"/>
+
+
   <link rel="stylesheet" href="./Assets/css/style.css">
+  <link rel="stylesheet" href="./Assets/projetos/trabalhos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
 </head>
 <body>
+  <header class="header">
+    <h1 class="logoeu"><a href="https://allekx.github.io/Profile/">ALEX SANDER</a></h1>
+    <nav>
+      <ul>
+        <a href="">SOBRE</a>
+        <a href="#section-job">PROJETOS</a>
+        <a href="#orcamentoForm">FORMULÁRIO</a>
+      </ul>
+    </nav>
+    <div class="contato-header">
+      <a href=""><img src="./Assets/icon/whatsapp icon.png" alt="Whatsapp"></a>
+    </div>
+  </header>
   <div class="container">
       <div class="section-title">Desenvolvedor Web</div>
       <div class="profile">
@@ -54,7 +72,7 @@
               
           </div>
       </div>
-      <div>
+      <div class="box-textoan">
           <p class="textoan">Olá! Meu nome é Alex Sander, tenho 23 anos e sou de Manaus. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas e, além dos meus estudos, me dedico a freelances na criação de landing pages e sites completos. Se você precisa de ajuda com desenvolvimento web ou quer criar algo único para sua presença online, estou à disposição! Sinta-se à vontade para entrar em contato.</p>
       </div>
       <div class="section-title">Tecnologias</div>
@@ -68,22 +86,72 @@
           <div class="hobby" style="background: silver;">Bootstrap</div>
           <div class="hobby" style="background: silver;">Java</div>
         </div>
-      <footer>
-        <a href="https://github.com/allekx/"><img src="./Assets/icon/github icon.png" alt="GitHub">
-        </a>
-        <a href="https://br.linkedin.com/in/alex-sander-campos-lopes-42938521b?original_referer=https%3A%2F%2Fbr.search.yahoo.com%2F"><img src="./Assets/icon/linkedin icon.png" alt="Linkedin"></a>
-        <a href="https://www.instagram.com/dev.allex/"><img src="./Assets/icon/instagram icon.png" alt="Instagram"></a>
-        <a href="https://api.whatsapp.com/send?phone=92994287301"><img src="./Assets/icon/whatsapp icon.png" alt="Whatsapp"></a>
-      </footer>
-      <div class="botao-trabalhos">
+
+     <!-- <div class="botao-trabalhos">
       <span class="trabalhos" id="pasta"> <img src="./Assets/icon/pasta-aberta.png" alt="icon"><a href="./Assets/projetos/trabalhos.html">Trabalhos</a></span>
-    </div>
+    </div>-->
   </div>
  
-  <h1 class="title-form">Solicite um orçamento sem compromisso</h1>
+
  <!-- <p class="descricao-form">Preencha o formulário abaixo e entraremos em contato com você o mais breve possível.</p>-->
+  <section class="form-job">
+
+
+
+
+
+
+  <div class="section-job" id="section-job">
+
+    <div class="section-description">
+      Explore meus projetos e descubra como eles podem facilitar sua jornada.
+    </div>
+
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="https://allekx.github.io/School-Project/">
+            <div class="card">
+              <div class="card-icon"></div>
+              <img src="./Assets/img/exemplo img site.jpeg" alt="Imagem site">
+              <div class="card-title">Site institucional</div>
+            </div>
+          </a>
+          <p></p>
+        </div>
+        <div class="swiper-slide">
+       
+          <div class="card">
+            <div class="card-icon"></div>
+            <img src="../img/exemplo img site.jpeg" alt="">
+            <div class="card-title"></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+    
+          <div class="card">
+            <div class="card-icon"></div>
+            <img src="../img/exemplo img site.jpeg" alt="">
+            <div class="card-title"></div>
+          </div>
+        </div>
+        <!-- Adicione mais slides conforme necessário -->
+      </div>
+      <!-- Adiciona os botões de navegação -->
+     <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    
+    <!--<a class="back-button" href="/index.html">←  Voltar</a>
+  </div>-->
+
 
   <form id="orcamentoForm" enctype="multipart/form-data">
+
+    <h1 class="title-form">Solicite um orçamento</h1>
+    
     <label for="nome">Nome Completo:</label>
     <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
   
@@ -91,7 +159,7 @@
     <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
   
     <label for="telefone">Telefone:</label>
-<input type="tel" id="telefone" name="telefone" placeholder="(DDD) 99999-9999" maxlength="15" required>
+    <input type="tel" id="telefone" name="telefone" placeholder="(DDD) 99999-9999" maxlength="15" required>
   
     <label for="empresa">Empresa:</label>
     <input type="text" id="empresa" name="empresa" placeholder="Nome da sua empresa (opcional)">
@@ -140,6 +208,21 @@
     <button type="submit">Enviar</button>
   </form>
 
+
+</section>
+
+
+
+
+ <!-- <footer>
+    <a href="https://github.com/allekx/"><img src="./Assets/icon/github icon.png" alt="GitHub">
+    </a>
+    <a href="https://br.linkedin.com/in/alex-sander-campos-lopes-42938521b?original_referer=https%3A%2F%2Fbr.search.yahoo.com%2F"><img src="./Assets/icon/linkedin icon.png" alt="Linkedin"></a>
+    <a href="https://www.instagram.com/dev.allex/"><img src="./Assets/icon/instagram icon.png" alt="Instagram"></a>
+    <a href="https://api.whatsapp.com/send?phone=92994287301"><img src="./Assets/icon/whatsapp icon.png" alt="Whatsapp"></a>
+  </footer>-->
+
+<script src="./Assets/projetos/trabalhos.js"></script>
 <script src="./Assets/script/script.js"></script>
 <script src="./server.js"></script>
 </body>
